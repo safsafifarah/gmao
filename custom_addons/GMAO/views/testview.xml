@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GMAO/views/testview.xml -->
+
+<odoo>
+
+    <!-- Form View -->
+    <record id="view_test_form" model="ir.ui.view">
+        <field name="name">gmao.test.form</field>
+        <field name="model">gmao.test</field>
+        <field name="arch" type="xml">
+            <form string="Test Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="age"/>
+                        <field name="is_urgent"/>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="action_test_model" model="ir.actions.act_window">
+        <field name="name">test</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">gmao.test</field>
+        <field name="view_mode">tree, form</field>
+    </record>
+    
+
+    <menuitem
+            id="menu_intervention"
+            name="Intervention"
+            parent ="menu_root_gmao"
+            action ="action_test_model"
+            sequence="10"
+
+    />
+
+</odoo>

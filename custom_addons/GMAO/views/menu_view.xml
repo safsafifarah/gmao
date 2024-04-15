@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GMAO/views/menu_view.xml -->
+
+<odoo>
+        <!-- Define the application menu for your module -->
+    <menuitem
+            id="menu_root_gmao"
+            name="GMAO"
+            sequence="10"
+            web_icon="GMAO/static/description/icon.png"
+    />
+    <menuitem
+            id="menu_intervention"
+            name="Intervention"
+            parent ="menu_root_gmao"
+            sequence="10"
+
+    />
+</odoo>
