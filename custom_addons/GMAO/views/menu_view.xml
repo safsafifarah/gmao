@@ -16,4 +16,12 @@
             sequence="10"
 
     />
+
+    <menuitem
+            id="menu_request"
+            name="Maintenance Request"
+            parent ="menu_root_gmao"
+            sequence="10"
+
+    />
 </odoo>

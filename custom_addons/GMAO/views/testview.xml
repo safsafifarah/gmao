@@ -27,9 +27,9 @@
         <field name="name">test</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">gmao.test</field>
-        <field name="view_mode">tree, form</field>
+        <field name="view_mode">tree,form</field>
     </record>
-    
+
 
     <menuitem
             id="menu_intervention"
